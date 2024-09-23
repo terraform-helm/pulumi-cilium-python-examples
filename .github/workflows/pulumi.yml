@@ -2,9 +2,7 @@ name: Pulumi
 env:
   PULUMI_CONFIG_PASSPHRASE: ""
 on:
-  push:
-    branches:
-      - main
+  push: {}
   pull_request:
     paths-ignore:
       - '*/README.md'
