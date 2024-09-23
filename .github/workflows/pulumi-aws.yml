@@ -54,7 +54,7 @@ jobs:
       - name: Set Output Based on Geolocation
         id: set_output
         run: echo "status=${{ env.GEOLOCATION_STATUS }}" >> $GITHUB_OUTPUT
-      - uses: cilium/cilium-cli@404d52692f62eebb7211fdacd114848995ada1b7
+      - uses: cilium/cilium-cli@2115e2c101f21eb841ffeafe137c72280ce85fcb
         if: steps.set_output.outputs.status == 'proceed'
         with:
           skip-build: true
